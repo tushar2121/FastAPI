@@ -1,0 +1,18 @@
+# Imports the Google Cloud client library
+from google.cloud import logging as log
+import logging
+from google.oauth2 import service_account
+import json
+with open('deyesuat.json(credentials file)') as source:
+    info = json.load(source)
+storage_credentials = service_account.Credentials.from_service_account_info(info)
+# Instantiates a client
+logging_client = log.Client(credentials=storage_credentials)
+logging_client.get_default_handler()
+logging_client.setup_logging()
+#MAC ADDRESS
+formatted_mac=':'.join(re.findall('..', '%012x' %uuid.getnode()))
+
+
+logging.exception(f"This is exception logging test : {e}")
+logging.info(f"This is information logging : Date : {datetime.now()}, MachineAddress : {formatted_mac}, IP_Address: {request.client.host}")
