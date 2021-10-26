@@ -16,3 +16,11 @@ formatted_mac=':'.join(re.findall('..', '%012x' %uuid.getnode()))
 
 logging.exception(f"This is exception logging test : {e}")
 logging.info(f"This is information logging : Date : {datetime.now()}, MachineAddress : {formatted_mac}, IP_Address: {request.client.host}")
+
+reference links:
+https://docs.python.org/3/library/logging.html#:~:text=LogRecord%20attributes%20%C2%B6%20%20%20%20Attribute%20name,or%2C%20%20...%20%2017%20more%20rows%20
+https://pythonhowtoprogram.com/logging-in-python-3-how-to-output-logs-to-file-and-console/
+https://stackoverflow.com/questions/43873147/get-sessionid-using-request-python
+https://googleapis.dev/python/logging/1.12.1/index.html
+https://googleapis.dev/python/logging/1.12.1/stdlib-usage.html
+https://googleapis.dev/python/google-api-core/latest/auth.html
