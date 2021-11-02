@@ -24,3 +24,4 @@ https://stackoverflow.com/questions/43873147/get-sessionid-using-request-python
 https://googleapis.dev/python/logging/1.12.1/index.html
 https://googleapis.dev/python/logging/1.12.1/stdlib-usage.html
 https://googleapis.dev/python/google-api-core/latest/auth.html
+https://cloud.google.com/logging/docs/reference/libraries#write_structured_logs
